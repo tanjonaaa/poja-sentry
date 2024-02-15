@@ -32,8 +32,12 @@ public class PingController {
     }
 
 
+    return "pong";
 
-    return "pong "+System.getenv("SENTRY_DSN")+" "+System.getenv("SENTRY_ENVIRONMENT");
+  }
 
+  @GetMapping("/env")
+  public String getenv() {
+    return System.getenv("SENTRY_DSN") + "" + System.getenv("SENTRY_ENVIRONMENT");
   }
 }
