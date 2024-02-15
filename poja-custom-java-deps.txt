@@ -1,0 +1,1 @@
+implementation 'io.sentry:sentry-spring-boot-starter-jakarta:7.3.0'
