@@ -31,7 +31,9 @@ public class PingController {
       Sentry.captureException(e);
     }
 
-    return "pong";
+
+
+    return "pong "+System.getenv("SENTRY_DSN")+" "+System.getenv("SENTRY_ENVIRONMENT");
 
   }
 }
